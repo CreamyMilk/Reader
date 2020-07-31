@@ -3,14 +3,14 @@ running the reader run a local server using python using \n
 
 
 
-###python3 -m http.server 8000
+### python3 -m http.server 8000
   
   
   
   
 or use npm live-server \n
 
-###live-server 8000
+### live-server 8000
   
   
   
