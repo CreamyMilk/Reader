@@ -1,0 +1,64 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<title>{{ Title }}</title>
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript" src="./lib/hash.js"></script>
+</head>
+
+<body>
+	<div id="app">
+		<div id="canvas"></div>
+		<div class="zoom-icon zoom-icon-in"></div>
+
+		<div class="magazine-viewport">
+			<div class="container">
+				<div class="magazine">
+					<!-- Next button -->
+					<div ignore="1" class="next-button"></div>
+					<!-- Previous button -->
+					<div ignore="1" class="previous-button"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Thumbnails -->
+		<div class="thumbnails">
+			<!-- autogenerate -->
+			<div>
+				<ul>
+					<li class="i">
+						<img src="https://localhost:3000/pages/1-thumb.jpg" width="76" height="100" class="page-1">
+						<span>1</span>
+					</li>
+					<li v-for="thumb in thumbnails" :key="thumb.index" class="d">
+						<img v-bind:src="thumb.bimage" width="76" height="100" v-bind:class="thumb.bclass">
+						<img v-bind:src="thumb.aimage" width="76" height="100" v-bind:class="thumb.aclass">
+						<span>{{thumb.id}}</span>
+					</li>
+					<li class="i">
+						<img src="pages/12-thumb.jpg" width="76" height="100" class="page-12">
+						<span>12</span>
+					</li>
+					<ul>
+			</div>
+
+		</div>
+
+	</div>
+	<script src="./extras/vue.min.js"></script>
+	<script src="thumbnail.js"></script>
+	<script type="text/javascript" src="boilerplate.js"></script>
+	<script src="zoom.js"></script>
+</body>
+
+</html>
