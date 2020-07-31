@@ -1,7 +1,7 @@
 # Reader
-running the reader run a local server using python using
+running the reader run a local server using python using \n
   python3 -m http.server 8000
-or use npm live-server
+or use npm live-server \n
   live-server 8000
   
   
