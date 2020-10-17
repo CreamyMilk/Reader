@@ -5,9 +5,9 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString)
 const pdf_name = urlParams.get('pdf_name')
 const page = urlParams.get('pages')
-var pdfname = pdf_name ? pdf_name : 'testmag.pdf'
-var pagesn = parseInt(page) != 0? parseInt(page) :34
-
+var pdfname = pdf_name!=null ? pdf_name : 'testmag.pdf'
+var pagesn = parseInt(page) > 0 ? parseInt(page) : 34
+console.log(`dafault pdf is ${pdfname} with ${pagesn}`)
 function addPage(page, book) {
 	var id, pages = book.turn('pages');
 	// Create a new element for this page
