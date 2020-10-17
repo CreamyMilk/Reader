@@ -38,7 +38,7 @@ function loadPage(page, pageElement) {
 		pageElement.find('.loader').remove();
 	});
 	// Load the page mother load url manipulation
-	img.attr('src', `http://localhost:3000/pages/${pdfname}/` + page + '.jpg');
+	img.attr('src', `http://34.106.9.15:3000/pages/${pdfname}/` + page + '.jpg');
 	loadRegions(page, pageElement);
 }
 
@@ -64,7 +64,7 @@ function zoomTo(event) {
 // Load iframes and stypesregions
 
 function loadRegions(page, element) {
-	$.getJSON(`http://localhost:3000/pages/${pdfname}/` + page + '-regions.json').
+	$.getJSON(`http://34.106.9.15:3000/pages/${pdfname}/` + page + '-regions.json').
 		//$.getJSON('/pages/' + page + '-regions.json').
 		done(function (data) {
 			$.each(data, function (key, region) {
@@ -159,7 +159,7 @@ function loadSmallPage(page, pageElement) {
 	img.unbind('load');
 	// Loadnew page
 
-	img.attr('src', `http://localhost:3000/pages/${pdfname}/` + page + '.jpg');
+	img.attr('src', `http://34.106.9.15:3000/pages/${pdfname}/` + page + '.jpg');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488

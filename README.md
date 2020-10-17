@@ -14,4 +14,4 @@ Or use npm live-server
   
   
 sampleMAGAZINE
-url http://localhost:8000/?pdf_name=foodmag.pdf&pages=22#page/1
+url http://34.106.9.15:8000/?pdf_name=foodmag.pdf&pages=22#page/1
