@@ -16,6 +16,7 @@
 </head>
 
 <body>
+	<button onclick="myFunction()">Buy Magazine</button>
 	<div id="app">
 		<div id="canvas"></div>
 		<div class="zoom-icon zoom-icon-in"></div>
@@ -55,10 +56,16 @@
 		</div>
 
 	</div>
+	<script>
+	function myFunction() {
+	  var myWindow = window.open("https://payments.ipayafrica.com/v3/ke?live=1&oid=1603821811&inv=&ttl=3450&tel=254799999999&eml=erer@er.com&vid=medios&curr=KES&p1=&p2=&p3=&p4=&cbk=https%3A%2F%2Fcoupons.promo.ke%2Fget-27pc-off-on-a-meat-platter-with-chicken-wings-steak-sausages-and-fries%2F&cst=1&crl=0&hsh=55d161d290dfc5c77dc17e09fdb4bd30df67b040", "myWindow", "width=400,height=300");
+	}
+	</script>  
 	<script src="./extras/vue.min.js"></script>
 	<script src="thumbnail.js"></script>
 	<script type="text/javascript" src="boilerplate.js"></script>
 	<script src="zoom.js"></script>
+	
 </body>
 
 </html>
